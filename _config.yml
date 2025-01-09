@@ -1,17 +1,15 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+title:          M1
+description:    "Michał Kozłowski | Blog"
+url:            "https://m1.github.io"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Michał Kozłowski    
+  email:        m1chol@proton.me@gmail.com
 
 # Build settings
 markdown:       kramdown
