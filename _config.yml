@@ -1,7 +1,6 @@
 # Site settings
 title:          M1
 description:    "Michał Kozłowski | Blog"
-url:            "https://m1.github.io"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
@@ -9,6 +8,7 @@ google_analytics: UA—XXXXXXXX-X
 # Author
 author:
   name:         Michał Kozłowski    
+  site:         https://m1chol.github.io/m1/
   email:        m1chol@proton.me@gmail.com
 
 # Build settings
