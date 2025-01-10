@@ -3,6 +3,7 @@
     border-bottom: 1px solid $grey-2;
     color: $default-color;
     display: block;
+    position: relative;
     padding: 2rem 0;
 
     &:hover .catalogue-line,
@@ -36,10 +37,29 @@
     margin: .5rem 0;
   }
 
+  &-image {
+    max-width: 100%;
+
+    @media (min-width: 730px) {
+      position: absolute;
+      max-height: 60%;
+      max-width: 45%;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &-text {
+    @media (min-width: 730px) {
+      width: 50%;
+    }
+  }
+
   &-line {
     @include transition(all .3s ease-out);
     border-top: .2rem solid $default-shade;
     display: block;
     width: 2rem;
   }
+
 }
