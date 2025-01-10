@@ -16,7 +16,7 @@
     </p>
 
     {% if post.image %}
-    <img class="catalogue-image" src="/images/{{ post.image | relative_url }}">
+    <img class="catalogue-image" src="{{ " /assets/images/" post.image}}">
     {% endif %}
   </div>
 </a>

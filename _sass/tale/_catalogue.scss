@@ -42,4 +42,23 @@
     display: block;
     width: 2rem;
   }
+
+  &-image {
+    max-width: 100%;
+
+    @media (min-width: 730px) {
+      position: absolute;
+      max-height: 60%;
+      max-width: 45%;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &-text {
+    @media (min-width: 730px) {
+      width: 50%;
+    }
+  }
+
 }
