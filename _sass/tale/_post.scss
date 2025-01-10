@@ -26,31 +26,7 @@
     margin: 0 auto 3rem;
     width: 4rem;
   }
-
-  &-image-left {
-    max-width: 80%;
-    margin: auto;
-    display: block;
-
-    @media (min-width: 600px) {
-      max-width: 40%;
-      float: left;
-      margin: 1rem 1rem 1rem 0;
-    }
-  }
-
-  &-image-right {
-    max-width: 80%;
-    margin: auto;
-    display: block;
-
-    @media (min-width: 600px) {
-      max-width: 40%;
-      float: right;
-      margin: 1rem 0 1rem 1rem;
-    }
-  }
-
+  
   p {
     margin: 0 0 1rem;
     text-align: justify;
@@ -84,4 +60,30 @@
     padding: 0;
     margin: 0;
   }
+  
+  &-image-left {
+    max-width: 80%;
+    margin: auto;
+    display: block;
+
+    @media (min-width: 600px) {
+      max-width: 40%;
+      float: left;
+      margin: 1rem 1rem 1rem 0;
+    }
+  }
+  
+  &-image-right {
+    max-width: 80%;
+    margin: auto;
+    display: block;
+
+    @media (min-width: 600px) {
+      max-width: 40%;
+      float: right;
+      margin: 1rem 0 1rem 1rem;
+    }
+  }
+
+  
 }
