@@ -36,10 +36,6 @@
     text-decoration: underline;
   }
 
-  img {
-    margin: 0 auto 0.5rem;
-  }
-
   img+em {
     color: $default-tint;
     display: block;
@@ -69,7 +65,7 @@
     @media (min-width: 600px) {
       max-width: 40%;
       float: left;
-      margin: 1rem 1rem 1rem 0 !important;
+      margin: 1rem 1rem 1rem 0;
     }
   }
   
@@ -81,7 +77,7 @@
     @media (min-width: 600px) {
       max-width: 40%;
       float: right;
-      margin: 1rem 0 1rem 1rem !important;
+      margin: 1rem 0 1rem 1rem;
     }
   }
 
