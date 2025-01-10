@@ -37,6 +37,7 @@
     margin: .5rem 0;
   }
 
+  /*
   &-image {
     max-width: 100%;
 
@@ -53,7 +54,7 @@
     @media (min-width: 730px) {
       width: 50%;
     }
-  }
+  }*/
 
   &-line {
     @include transition(all .3s ease-out);
