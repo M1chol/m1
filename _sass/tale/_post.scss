@@ -27,6 +27,27 @@
     width: 4rem;
   }
 
+  &-image {
+    max-width: 80%;
+    margin: auto;
+    display: block;
+
+    @media (min-width: 600px) {
+      max-width: 40%;
+      margin: 1rem;
+
+      &-left {
+        float: left;
+        margin: 1rem 1rem 1rem 0;
+      }
+
+      &-right {
+        float: right;
+        margin: 1rem 0 1rem 1rem;
+      }
+    }
+  }
+
   p {
     margin: 0 0 1rem;
     text-align: justify;
@@ -40,7 +61,7 @@
     margin: 0 auto 0.5rem;
   }
 
-  img + em {
+  img+em {
     color: $default-tint;
     display: block;
     font-family: $sans-serif;
