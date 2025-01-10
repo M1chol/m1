@@ -16,7 +16,7 @@
     </p>
 
     {% if include.image %}
-    <img class="catalogue-image" src="{{ site.baseurl }}/images/{{ post.image }}">
+    <img class="catalogue-image" src="/images/{{ post.image }}" | relative_url>
     {% endif %}
   </div>
 </a>
