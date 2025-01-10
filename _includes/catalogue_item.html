@@ -7,13 +7,16 @@
     <h1 class="catalogue-title">{{ post.title }}</h1>
     <div class="catalogue-line"></div>
 
-    <p>
+    <p class="catalogue-text">
       {% if post.excerpt_separator %}
-        {{ post.excerpt | strip_html }}
+      {{ post.excerpt | strip_html }}
       {% else %}
-        {{ post.content | strip_html | truncatewords: 30 }}
+      {{ post.content | strip_html | truncatewords: 30 }}
       {% endif %}
     </p>
+
+    <img class="catalogue-image"
+      src="https://www.globtroter.pl/zdjecia/polska/b266696_polska_malopolska_rusinowa_polana.jpg">
 
   </div>
 </a>
