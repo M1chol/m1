@@ -15,8 +15,8 @@
       {% endif %}
     </p>
 
-    <img class="catalogue-image"
-      src="https://www.globtroter.pl/zdjecia/polska/b266696_polska_malopolska_rusinowa_polana.jpg">
-
+    {% if post.image %}
+    <img class="catalogue-image" src="{{ post.image | relative_url }}">
+    {% endif %}
   </div>
 </a>
