@@ -5,7 +5,6 @@ author: "Michał Kozłowski"
 excerpt_separator: <!--more-->
 ---
 
-## Generating images with Stable Diffusion
 I’ll walk you through the basics of Stable Diffusion, breaking down what it is and how you can use it to generate your own images. 
 <!--more--> 
 
