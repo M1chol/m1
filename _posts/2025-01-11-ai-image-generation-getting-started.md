@@ -3,7 +3,6 @@ layout: post
 title: "Getting started with AI image generation"
 author: "Michał Kozłowski"
 excerpt_separator: <!--more-->
-image: /assets/images/stable-diff4.jpg
 ---
 
 ## Generating images with Stable Diffiusion
@@ -43,7 +42,7 @@ Let's start from the most important thing, the model you use. I belive every one
 
 Even if you want to generate stylized images (I'll get to that later) I advise you to get realistic good model first. Here is the `v1-5-pruned-emaonly.safetensors` vs `Juggernaut XL` (same settings) prompt: `cinematic landscape, great moutain`.
 
-![img]({{ "/assets/images/stable-diff1.jpg" | relative_url }})
+![img]({{ "assets/images/stable-diff1.jpg" | relative_url }})
 
 You can see the diference between models.
 
@@ -54,11 +53,11 @@ When generating images you have two settings that are the most important.
 
 Sampling rate controlls how many times the model will "enchance" the image. More steps equals more quality, that is before the image becomes distorted. Some models can handel more steps before destorting the image. Also don't forget that more steps means more time to generate. For me the sweet spot is around 45 - 75 depending on usecase.
 
-![img]({{ "/assets/images/stable-diff2.jpg" | relative_url }})
+![img]({{ "assets/images/stable-diff2.jpg" | relative_url }})
 
 CFG Scale is a parameter that conrolls how closely a model will follow your prompt. Usually you need to set it once, for every model. Usually in the 4 - 7 range rarerly more.
 
-![img]({{ "/assets/images/stable-diff3.jpg" | relative_url }})
+![img]({{ "assets/images/stable-diff3.jpg" | relative_url }})
 
 ## Images with style
 If you want something more artistic or specific, you need to check LoRA's. Lora (Low-Rank Adaptation) is a training technique for fine-tuning Stable Diffusion models. It is basicly a way for a model to understand new concepts or styles. All you need to do is download the additional small model and put it in corresponding folder. Here are some examples:
