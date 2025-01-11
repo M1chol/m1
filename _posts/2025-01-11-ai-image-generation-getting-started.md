@@ -2,7 +2,6 @@
 layout: post
 title: "Getting started with AI image generation"
 author: "Michał Kozłowski"
-tags: Tutorial
 excerpt_separator: <!--more-->
 ---
 
@@ -22,7 +21,7 @@ OK, so you have a right GPU, now you need the right tools. If you did some resea
 1. [Automatic1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 2. [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 
-First one is simple web interface for running models, it is pretty easy to get started, and library of extentions and big community is a great. `ComfyUI` is more specialised i would say, it is very different then `Automatic1111`. You build your own generation profile by connecting nodes. This gives you **very** much controll over the result, but is hard for newcomers. As great as those tools are I wouldn't call them hassle free. So if you want to go the easy way check out this Krita plugin:
+First one is simple web interface for running models, it is pretty easy to get started, and library of extentions and big community is great. `ComfyUI` is more specialised, it is very different then `Automatic1111`. You build your own generation profile by connecting nodes. This gives you **very** much controll over the result, but is hard for newcomers. As great as those tools are I wouldn't call them hassle free. So if you want to go the easy way check out this Krita plugin:
 
 3. [Krita plug-in for stable diffusion](https://github.com/Acly/krita-ai-diffusion)
 
@@ -35,7 +34,7 @@ _Comfy UI workflow with ControlNet_
 
 Just to clarify, this example is simple and thus also possible in other tools, but `Comfy` is just designed for aplications like this.
 
-**Installing**
+**Installing** <br>
 You probably chose your tool by now. Whatever it is I won't get into detail about instalation. Just simply follow the instructions provided by creators:
 
 1. [Krita plug-in download](https://github.com/Acly/krita-ai-diffusion/releases/), [standard Krita plug-in instructions](https://docs.krita.org/en/user_manual/python_scripting/install_custom_python_plugin.html)
@@ -54,13 +53,13 @@ Outside of different prompts you can also try different models (also called chec
 - [Juggernaut XL](https://civitai.com/models/133005/juggernaut-xl)
 - [Realistic Vision](https://civitai.com/models/4201?modelVersionId=501240)
 
-Even if you want to generate stylized images (I'll get to that later) I advise you to get realistic good model first. Here is the `v1-5-pruned-emaonly.safetensors` vs `Juggernaut XL` (same settings) prompt: `cinematic landscape, great moutain`.
+Even if you want to generate stylized images (I'll get to that later) I advise you to get good realistic model first. Here is the `v1-5-pruned-emaonly.safetensors` vs `Juggernaut XL` (same settings), prompt used: `cinematic landscape, great moutain`.
 
 ![img]({{ "assets/images/stable-diff1.jpg" | relative_url }})
 
 You can see the diference between models.
 
-**Main settings**
+**Main settings** <br>
 When generating images you have two settings that are the most important. You can find those for Krita by clicking gears icon
 1. Sampling rate
 2. CFG Scale
@@ -79,6 +78,7 @@ If you want something more artistic or specific, you need to check LoRA's. Lora 
 - [Il était une FOIS](https://civitai.com/models/631617/style-lora-il-etait-une-fois) - Artistic style of the French educational animation.
 
 You can also find those on CivitAI.
+If you want to read more about loras: [Softwarekeep article](https://softwarekeep.com/blogs/how-to/how-to-use-stable-diffusion-lora-models)
 
 ## And that's all
 Not really. But you have very basic understending of core concepts. In the future I'll create step by step guids for each tool, so look for the `Tutorial` tag in [Tags](https://m1chol.github.io/m1/tags/)
