@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "About"
 author: "Michał Kozłowski"
 permalink: /about/
 ---
 
 <img class="post-image-left" src="/m1/assets/images/michol.jpg">
 
-# Hi! 
-Im Michał _M1chol_ Kozłowski im 20 yo. from Poland. I love creating stuff, programming and Im a huge advocate of open source. You can see my work at [github](https://github.com/M1chol). I am proficient in C++ and Python but I worked with many other languages. I currently study Cryptology and Cyberseciurity at Warsaw Military University of Technology (civil). If you wish to contact me do so at `m1chol[at]proton.me`.
+# Hi!
+I'm Michał, and I'm a 20 yo student from Poland. I love creating things, programming, and I'm a huge advocate of open source. You can check out my work on [GitHub](https://github.com/M1chol)  and feel free to explore my [blog posts](https://m1chol.github.io/m1/) for insights on my projects . I'm proficient in C++ and Python, but I've worked with many other languages as well. Currently, I'm studying Cryptology and Cybersecurity at the Warsaw Military University of Technology (civil).
+
+If you wish to contact me, feel free to reach out at `m1chol [at] proton.me`
 
 Thanks for reading!
