@@ -22,9 +22,9 @@ Unfortunately google stopped updating the needed libraries leaving us with two o
 1. use the original version for old Tensorflow and python e.g. in Docker
 2. use the newer version continued by the community
 
-Regarding point one, I recommend the excellent [Jeff Geerling's blog post](https://www.jeffgeerling.com/blog/2023/pcie-coral-tpu-finally-works-on-raspberry-pi-5) he explains how to use Docker to make an “outdated” virtual machine inside rpi. The solution works but is not satisfactory for me. Looking for an alternative, I found the user [feranick](https://github.com/feranick/), who fixed bugs in the google repositories and built improved versions of gasket-dkms, libedgetpu and pycoral that work for the new version of Tensorflow (2.17) and python (3.11). All further instructions for point 2. </br>
+Regarding point one, I recommend the excellent [Jeff Geerling's blog post](https://www.jeffgeerling.com/blog/2023/pcie-coral-tpu-finally-works-on-raspberry-pi-5) he explains how to use Docker to make an “outdated” virtual machine inside rpi. The solution works but is not satisfactory for me. Looking for an alternative, I found the user [feranick](https://github.com/feranick/), who fixed bugs in the google repositories and built improved versions of gasket-dkms, libedgetpu and pycoral that work for the new version of Tensorflow (2.17) and python (3.11). All further instructions for point 2.
 
-**Technical** </br>
+**Technical** <br>
 The gray text in the code blocks (preceded by #) indicates a general comment illustrating the operation of the command. Below you will find the command for my case, it may differ from your command, so be careful. If the commands are split with newline run them one by one.
 
 ## Instructions
@@ -60,9 +60,9 @@ dtc -I dtb -O dts /boot/firmware/bcm2712-rpi-5-b.dtb -o ~/test.dts
 nano ~/test.dts
 ```
 Now search for the lines `msi-parent = <0x2f>` e.g. using `Crl+Q` and typing the phrase. You should find yourself in the section labeled `pcie@110000` scroll down and note the value of `phandle` (on the bottom). Enter the value of `phandle` to the value of `msi-parent`. In my case:
-![]({{ "assets/images/coral-1.jpg" | relative_url }})
+![]({{ "assets/images/coral-1.png" | relative_url }})
 The value of `phandle` is `0x68`. Now we replace the `msi-parent` value with the `phandle` value.
-![]({{ "assets/images/coral-2.jpg" | relative_url }})
+![]({{ "assets/images/coral-2.png" | relative_url }})
 we exit by saving the file with `Ctrl+X`, `Y`, `Enter`. The last step is to recompile the tree.
 ```bash
 dtc -I dts -O dtb ~/test.dts -o ~/test.dtb
