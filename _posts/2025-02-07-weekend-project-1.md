@@ -2,7 +2,7 @@
 layout: post
 title: "One week(end) project - Note taking app"
 author: "Michał Kozłowski"
-tags: "Weekend project"
+tags: "Weekend-project"
 image: /assets/images/weekend-project-1/1.png
 excerpt_separator: <!--more-->
 ---
