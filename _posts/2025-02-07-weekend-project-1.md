@@ -391,7 +391,7 @@ See this in action:
 Only UI button that have a real function
 
 # Full code
-If you want to see full code go to https://github.com/M1chol/m1-notes
+If you want to see full code go to [https://github.com/M1chol/m1-notes](https://github.com/M1chol/m1-notes)
 
 ## My thoughts
 In the end the whole project took about 4 days, which is 2 days more then planed. This whole format was very spontaneous, and I plan to try it again sometimes. I really liked working with `Qt` and I'll revisit it sometime. When it comes to the end product, I came nowhere near meeting my own expectations.
