@@ -3,7 +3,6 @@ layout: post
 title: "n8n automation with python"
 author: "Michał Kozłowski"
 tags: Tutorials
-image: /assets/images/weekend-project-1/1.png
 excerpt_separator: <!--more-->
 ---
 
