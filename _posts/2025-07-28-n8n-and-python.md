@@ -119,4 +119,4 @@ Here you can see the result. As you can see, everything worked. The model rememb
 
 ## Thoughts
 
-This simple example could be done without the use of `n8n` by taking advantage of `OpenAI` or `Google` built-in agent utilities that can be accessed via API. But this setup is arguably simpler and more scalable. In the next posts, I will be experimenting with integrating `vosk` for speech-to-text synthesis.se of `n8n` by taking advantage of `OpenAI` or `Google` built in agent utilities that can be accessed with API. But this setup is arguably simpler, and more scalable. In the next posts I will be experimenting with integrating `vosk` for speech to text syntheses.
+This simple example could be done without the use of `n8n` by taking advantage of `OpenAI` or `Google` built-in agent utilities that can be accessed via API. But this setup is arguably simpler and more scalable. In the next posts, I will be experimenting with integrating `vosk` for speech-to-text synthesis.
