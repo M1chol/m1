@@ -116,6 +116,40 @@ And now for the `Memory` node. In the `Key` value, type `{{ $('Webhook').item.js
 
 Here you can see the result. As you can see, everything worked. The model remembered my name and called the tool successfully.
 
+## Full Code
+
+```python
+
+import requests
+import json
+import uuid
+
+def sendData(data):
+    response = requests.post(
+        url="http://localhost:5678/webhook/1c844166-8210-403a-8843-7519134d22c5",
+        headers={"Content-Type": "application/json", "Authorization": "Bearer your-token"},
+        data=json.dumps(data)
+        )
+
+    if response.status_code == 200:
+        print(response.json()[0]['output'])
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
+
+sessionId = str(uuid.uuid4())
+print("session ID = ", sessionId)
+
+text = input()
+while text != "quit":
+    form = {
+            "data": text,
+            "sessionId": sessionId
+            }
+    sendData(form)
+    text = input()
+
+
+```
 ## Thoughts
 
 This simple example could be done without the use of `n8n` by taking advantage of `OpenAI` or `Google` built-in agent utilities that can be accessed via API. But this setup is arguably simpler and more scalable. In the next posts, I will be experimenting with integrating `vosk` for speech-to-text synthesis.
