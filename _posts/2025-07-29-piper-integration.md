@@ -6,7 +6,7 @@ tags: Tutorials
 excerpt_separator: <!--more-->
 ---
 
-I'm working on integrating speech synthesizer to my home assistant project. I decided to use piper library in python. <!--more--> I worked out simple example of how to use [piper](https://github.com/OHF-Voice/piper1-gpl) python API to generate Polish audio from text. If you are interested in different languages the library supports over 40 of them (Check out [those examples](https://rhasspy.github.io/piper-samples/)). This library does not need much computational power so it should work on edge devices like `Raspberry PI` or even better Nvidia's `Orin NANO`. Latter supports `cuda` so will work even better.
+I'm working on integrating a speech synthesizer to my home assistant project. I decided to use piper library in python. <!--more--> I created a simple example of how to use [piper](https://github.com/OHF-Voice/piper1-gpl) python API to generate Polish audio from text. If you are interested in different languages the library supports over 40 of them (Check out [those examples](https://rhasspy.github.io/piper-samples/)). This library does not need much computational power so it should work on edge devices like `Raspberry PI` or even better Nvidia's `Orin NANO`. Latter supports `cuda` so will work even better.
 
 ## Installation
 
