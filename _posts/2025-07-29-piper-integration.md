@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Text to speach in python"
+title: "Text to speech in python"
 author: "Michał Kozłowski"
 tags: Tutorials
 excerpt_separator: <!--more-->
