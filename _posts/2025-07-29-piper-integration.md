@@ -34,7 +34,7 @@ python3 -m piper -m pl_PL-darkman-medium -f test.wav -- 'To jest test!'
 
 There is no working example provided in the documentation, so I had to improvise. I want the assistant to be as responsive as possible, so streaming the response is important. I don’t want to wait until all of the text has been fully generated. The code provided below waits for the user to type in the message, and then reads it out to speakers.
 
-```python
+```py
 import numpy as np
 import sounddevice as sd
 from piper.voice import PiperVoice, SynthesisConfig
@@ -57,7 +57,6 @@ stream = sd.OutputStream(
     channels=1,
     dtype="int16",
 )
-
 
 stream.start()
 

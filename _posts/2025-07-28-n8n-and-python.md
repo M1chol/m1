@@ -61,7 +61,7 @@ After playing with the provided AI chat example, I quickly wanted to escape from
 
 Now we need some Python code to send the `POST` request to a specified address. This is easily done using the `requests` package.
 
-```python
+```py
 import requests
 import json
 
@@ -82,7 +82,7 @@ This code is pretty much self-explanatory. We use `requests.post` to send a `POS
 
 I previously explained the importance of memory. To handle it in Python, we need to create the `sessionId` and keep track of it when sending messages.
 
-```python
+```py
 import uuid
 
 sessionId = str(uuid.uuid4())
@@ -91,7 +91,7 @@ print("session ID =", sessionId)
 
 The last step is to format the data in an appropriate way and use the `sendData` function.
 
-```python
+```py
 text = input()
 while text != "quit":
     form = {
@@ -118,7 +118,7 @@ Here you can see the result. As you can see, everything worked. The model rememb
 
 ## Full Code
 
-```python
+```py
 
 import requests
 import json
