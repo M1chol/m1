@@ -70,7 +70,7 @@ sudo usermod -a -G ollama $(whoami)
 ```
 
 Create a service file in `/etc/systemd/system/ollama.service`:
-```
+```bash
 [Unit]
 Description=Ollama Service
 After=network-online.target

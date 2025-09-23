@@ -123,11 +123,7 @@ table {
     @include transition(background-color 0.2s ease-out);
 
     &:nth-child(even) {
-      background-color: lighten($shadow-color, 48%);
-    }
-
-    &:hover {
-      background-color: lighten($shadow-color, 35%);
+      background-color: lighten($shadow-color, 20%);
     }
   }
 }
