@@ -128,7 +128,6 @@ I tested several models on my hardware. In the table below you can see:
 | Intelligence score| more = better                |
 | Multi-lingual     | good > simple > poor > none  |
 
-> NOTE
 > CPU/GPU stats were measured *after* memory optimization. See the next chapter for details.
 
 | Model name     | Thinking | tokens/s | CPU/GPU | Total memory use | Intelligence score | Multi-lingual |
@@ -173,7 +172,6 @@ To re-enable it:
 sudo init 5
 ```
 
-> NOTE 
 > After disabling the desktop you’ll have to sign in via terminal. While in terminal mode you can switch sessions using `Alt+F2`, `Alt+F3`, etc.
 
 Disable unnecessary services:
