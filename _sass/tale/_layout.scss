@@ -24,15 +24,15 @@ footer,
   }
 
   &-title {
-    @include transition(all .2s ease-out);
+    @include transition(all 0.2s ease-out);
     color: $default-color;
     display: inline-block;
     margin: 0;
-    padding-right: .2rem;
+    padding-right: 0.2rem;
 
     &:hover,
     &:focus {
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 
@@ -44,10 +44,10 @@ footer,
   }
 
   li {
-    @include transition(all .2s ease-out);
+    @include transition(all 0.2s ease-out);
     color: $default-color;
     display: inline-block;
-    opacity: .6;
+    opacity: 0.6;
     padding: 0 2rem 0 0;
 
     &:last-child {
@@ -87,6 +87,58 @@ footer {
 
   span {
     color: $default-color;
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 800px;
+  font-family: $serif-secondary;
+  font-size: 0.95rem;
+  color: $default-color;
+  box-shadow: 0 2px 4px -1px $shadow-color;
+
+  thead {
+    background-color: lighten($shadow-color, 30%);
+  }
+
+  th,
+  td {
+    border: 1px solid lighten($shadow-color, 40%);
+    text-align: left;
+    padding: 0.75rem 1rem;
+  }
+
+  th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+  }
+
+  tbody tr {
+    @include transition(background-color 0.2s ease-out);
+
+    &:nth-child(even) {
+      background-color: lighten($shadow-color, 48%);
+    }
+
+    &:hover {
+      background-color: lighten($shadow-color, 35%);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 0.85rem;
+
+    th,
+    td {
+      padding: 0.5rem;
+    }
   }
 }
