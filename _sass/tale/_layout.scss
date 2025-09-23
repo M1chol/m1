@@ -101,6 +101,10 @@ table {
   color: $default-color;
   box-shadow: 0 2px 4px -1px $shadow-color;
 
+  thead {
+    background-color: lighten($shadow-color, 30%);
+  }
+
   th,
   td {
     text-align: left;
