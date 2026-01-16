@@ -15,23 +15,24 @@ Using other sensors is possible but would mean taking additional steps:
 2. installing V4L2-compliant driver from the supplier
 3. Ensuring proper CSI-2 lane configuration
    
+
 This tutorial wont cover those. You can read more [here](https://docs.nvidia.com/jetson/archives/r35.4.1/DeveloperGuide/text/SD/CameraDevelopment/CameraSoftwareDevelopmentSolution.html#camera-architecture-stack)
 ![](https://docs.nvidia.com/jetson/archives/r35.4.1/DeveloperGuide/_images/ArchitectureStack.svg)
 If you look at the graph above both `IMX219` and `IMX477` will use the built in `Tegra Drivers` - marked in green on the right side, this means that the device will be recognized by the kernel and registered as `/dev/video*`. Then we will use `libargus` library via `nvarguscamerasrc` in our `Gstreamer` application to read the images. You don't need to understand all those terms yet, but you'll see them pop up in the next steps.
+
 ## Computer vision in python
 I will be using python to develop my camera integration, relying on the well known `cv2`  library. However, there is a problem, `cv2` must be built with `GStreamer` support enabled, and the default version available on PyPI does not include this feature. Fortunately you don't need to build it from source (but you can), instead we will use the SDK Manger to flash appropriate `cv2` version directly onto the Jetson. 
-
 1. Power on the Jetson
 2. Connect the Jetson to a host computer with SDK Manager running
 3. Go to the Step 2
 4. Uncheck "Jetson Linux" and check "Jetson Runtime Components" and "Jetson SDK Components"
 ![]({{ "assets/images/jetson-camera/sdk1.png" | relative_url }}) 
-> Note:
-> If you updated the Jetson system beforehand using `sudo apt upgrade`, you probably updated the linux kernel. This causes version mismatch with the Jetson Runtime Components. You have to flash the Jetson Linux again or revert the update if you set up some kind of system snapshots.
+    > Note:
+    > If you updated the Jetson system beforehand using `sudo apt upgrade`, you probably updated the linux kernel. This causes version mismatch with the Jetson Runtime Components. You have to flash the Jetson Linux again or revert the update if you set up some kind of system snapshots.
 5. In the installation screen provide your user credential and click "Install"
-![]({{ "assets/images/jetson-camera/sdk2.png" | relative_url }})
->Note:  
->If you have just flashed the system, make sure to boot the device and complete the initial setup. For the SDK Components installation to succeed, you must have already created a user account.
+    ![]({{ "assets/images/jetson-camera/sdk2.png" | relative_url }})
+    >Note:  
+    >If you have just flashed the system, make sure to boot the device and complete the initial setup. For the SDK Components installation to succeed, you must have already created a user account.
 6. Reboot the device and you should be ready to go
    
 ### Important!
