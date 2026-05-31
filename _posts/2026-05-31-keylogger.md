@@ -48,11 +48,9 @@ User Execution of a malicious file ([T1204.002](https://attack.mitre.org/techniq
 Installer can be made trivially using ready installation systems like [Inno Setup](https://jrsoftware.org/isinfo.php). There are several upsides of creating installer like this. First of all user has no idea about the malware and is not suspicious after running it. And most importantly installer obfuscates the malicious payload by compressing it and joining with benign software. This can be seen when analyzing both samples on `virustotal`.
 
 ![]({{ "assets/images/keylogger/virustotal_base.png" | relative_url }}) 
-
 [virustotal](https://www.virustotal.com/gui/file/3abaf5a49c251790dca30ba0ee66ae275ee3db560404544a95e764595bdd0722) analysis result for base payload after 6 days
 
 ![]({{ "assets/images/keylogger/virustotal_installer.png" | relative_url }}) 
-
 imidiate [virustotal](https://www.virustotal.com/gui/file/2e32bdfe0e7d865897e4bdab9de42a23c2c4c026066519305203127a7d30d863/detection) result of a scan for a payload bundled in an installer.
 
 What is interesting, is that the immediate scan showed 4/71 detections for installer (as seen in the image) and 23/70 detections for a payload. Since then the results have been updated. I am not sure why, but it is probably a result of active/behavioral analysis taking more time. Right now virus total is showing 25/66 detections for installer which is still less then 40/70 but less impressive then I initially thought.
@@ -199,7 +197,7 @@ Silent `curl.exe` mail send
 
 Lets look at the attack scenario:
 
-![]({{ "assets/images/keylogger/attack_scenario.png" | relative_url }}) 
+![]({{ "assets/images/keylogger/attack_scenario.svg" | relative_url }}) 
 
 As you can see, the attacker has two points of contact with the system. First initiating the attack by sending the email, and then retrieving the data from the mail server. For both of those operations attacker needs to hide his IP. Not doing so would mean that route could be traced back from the malicious mail address to the attacker. Hiding the IP can be done  by using a trusted VPN service or tor network.
 
@@ -885,4 +883,4 @@ For writing the malicious code I almost exclusively used Kimi K2.6 from MoonShot
 - [Example keylogger utility written in cpp](https://github.com/ajayrandhawa/Keylogger/tree/master)
 - [What is RTLO in Hacking? How to Use Right-to-Left Override and Defend Against it](https://www.freecodecamp.org/news/rtlo-in-hacking/)
 - [AV engines evasion for C++ simple malware ](https://cocomelonc.github.io/tutorial/2021/09/04/simple-malware-av-evasion.html)
-- https://cocomelonc.github.io/
+- [https://cocomelonc.github.io/](cocomelonc - personal blog)
