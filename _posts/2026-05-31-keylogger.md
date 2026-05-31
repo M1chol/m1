@@ -7,7 +7,26 @@ tags: Cybersecurity
 
 This blog post is about my RED Team keylogger assignment for an university class. The purpose of this project was to understand how simple windows keylogger is made, as well as to learn the MITRE ATT&CK threat model. I was able to make a keylogger that works on updated windows 11 system with windows defender security features enabled (as of 28.05.2026). It was also an opportunity for me to test out the current AI models for red teaming tasks in cybersecurity. The university task outlined minimal requirements for a keylogging program which I met.
 
-[TOC]
+---
+**Red Team Project - Windows keylogger**
+- [Initial access](#initial-access)
+- [Execution](#execution)
+- [Persistence](#persistence)
+- [Stealth](#stealth)
+  - [Masquerading (T1036)](#masquerading-t1036)
+  - [Initial installation](#initial-installation)
+- [Functionality](#functionality)
+- [Exfiltrating data](#exfiltrating-data)
+- [Anonymity](#anonymity)
+- [Deep dive into keylogging](#deep-dive-into-keylogging)
+- [Code](#code)
+  - [Basic keylogger](#basic-keylogger)
+  - [Keylogger with SMTP data exfiltration](#keylogger-with-smtp-data-exfiltration)
+  - [Full installer script](#full-installer-script)
+- [AI Use](#ai-use)
+- [Interesting links](#interesting-links)
+
+---
 
 # Initial access
 
@@ -796,7 +815,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 ## Full installer script
 
-```txt
+```cpp
 #define MyAppName "PuTTY"
 #define MyAppVersion "0.83"
 #define MyAppPublisher "Simon Tatham"
