@@ -796,7 +796,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 ## Full installer script
 
-```
+```txt
 #define MyAppName "PuTTY"
 #define MyAppVersion "0.83"
 #define MyAppPublisher "Simon Tatham"
@@ -806,7 +806,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{2D0FBFC3-9161-41C9-943A-975B9D5596BD}
+AppId={2D0FBFC3-9161-41C9-943A-975B9D5596BD}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -854,8 +854,6 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Flags: nowait postinstall
 Filename: "{app}\cryptsvc.exe"; Flags: nowait runhidden
-
-
 ```
 
 # AI Use
